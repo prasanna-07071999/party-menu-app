@@ -1,0 +1,103 @@
+.filters-component {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-button {
+  background-color:rgb(197, 226, 255);
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.category-button.active {
+  background-color: #ff6f61;
+  color: white;
+}
+
+.search-veg-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap:15px
+}
+
+.search-input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #e97650;
+  min-width: 180px;
+  font-size: 16px;
+  height: 20px;
+}
+
+.only-veg-label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.check-box-style {
+  width: 20px;
+  height: 20px;
+  margin-left: 0px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .filters-component {
+    margin-bottom: 30px;
+    gap: 25px;
+  }
+
+  .category-button {
+    font-size: 16px;
+    padding: 18px;
+  }
+
+  .search-input {
+    min-width: 220px;
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .only-veg-label {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .filters-component {
+    gap: 30px;
+  }
+
+  .category-button {
+    font-size: 15px;
+    padding: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    height: 50px;
+  }
+
+  .search-input {
+    min-width: 250px;
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  .only-veg-label {
+    font-size: 16px;
+  }
+}
